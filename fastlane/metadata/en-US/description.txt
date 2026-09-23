@@ -1,0 +1,11 @@
+Pastedown holds quotes from volumes you sell, lend, lose, or cull, and lets you paste one cutting at a time onto today's cento. It is for anyone who lets a book leave the shelf and wants the line to stay.
+
+• Build today's cento. Select a cutting in the drawer, then tap Paste. Peel lifts the newest strip.
+• Two neighbours cannot share a volume. A same-volume paste is refused, counted under Same-volume pastes refused, and another volume stays pastable.
+• Cuttings are grouped as Fresh, Pasted, and Spent. Write a cutting with the quote, page, volume, and a Reread mark. A spent cutting cannot be pasted again.
+• Volumes is the shelf. Type Title, Maker, and Total pages, or enter an ISBN and tap Scan. Title and maker can fill from the catalogue. Add volume saves the book. Mark gone as Sold, Lent, Lost, or Culled; cuttings stay.
+• At midnight a board with two or more strips seals and hangs under Sealed centos. A thinner day writes Scrap and returns the lines to the drawer.
+• Sealed centos shows consecutive sealed days, Longest sealed cento, Lines that outlived their volume, Gone volumes on those lines, and Clash marks. Open a sealed cento to read each line or tap Copy.
+• Settings covers Store, Midnight seal, Show the opening pages again, Delete everything, and Contact.
+
+Quotes and centos stay on this device. There is no account and no sync.

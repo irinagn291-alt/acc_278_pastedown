@@ -1,0 +1,1 @@
+This first release keeps cuttings from volumes you sell, lend, lose, or cull and pastes them onto today's cento. Add a volume by Title or ISBN, Scan a barcode, mark a volume gone, Peel a strip, and open Sealed centos after midnight. Same-volume neighbours are refused and listed as clash marks.

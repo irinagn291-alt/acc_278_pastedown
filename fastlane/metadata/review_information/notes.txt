@@ -1,0 +1,17 @@
+Camera access appears only on Scan, after Volumes and Scan, or after Scan an ISBN. When access is not yet decided, the screen says “Hold the back of the book so the ISBN can fill the title.” and the button is Continue. The system dialog uses this usage description: “Scans the ISBN barcode on the back of a book so its title and publisher fill in before the book leaves your shelf.” If access is off, the screen offers Open Settings. A notifications prompt may appear at launch. The build settings do not set a custom notifications usage string.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+Pastedown is a personal cento notebook for people who sell, lend, lose, or cull books and still want a kept quote. Each day the reader pastes cuttings from different volumes onto today's cento. Two neighbours cannot share a volume.
+
+No credentials or demo account are needed. Cold launch shows three opening pages: “Keep the line after the book leaves.”, “Paste the next line onto today's board.”, and “Two neighbours cannot share a volume.” Tap Continue on each page, or Skip. The board then shows Build today's cento. Tap Volumes, enter Title and Maker or an ISBN, optionally tap Scan, then Add volume. On Scan, tap Continue to reach the system camera dialog, or type the ISBN. After a volume exists, tap Cuttings, then Write a cutting, enter the line, Page number, Volume, optionally Reread, and Save. On the board, select that cutting in the drawer and tap Paste. Peel lifts the newest strip. Tap Same-volume pastes refused or Open clash marks to read Adjacent volume ban. Tap Sealed to open Sealed centos, then Back to the board. Settings includes Contact, Show the opening pages again, and Delete everything.
+
+An ISBN typed or scanned on Volumes looks up title and maker from a catalogue. Contact in Settings opens the support page. Quotes, centos, and marks stay on this device.
+
+Behaviour does not differ by region. Dates and weekday labels follow the device calendar and locale.
+
+No licence or regulated-industry paperwork applies. The app is a personal quote and cento log, not a commercial publisher, medical product, or financial service.
+
+The app is a personal log only and gives no recommendations. It does not show health, medical, or product-health information.
+
+The app scans ISBN barcodes and QR codes on Scan. A scannable QR (qr-code.png) is attached to this review. It encodes 9780306406157. Simulator users type those digits.

@@ -1,0 +1,1 @@
+cento,quotes,books,ISBN,cuttings,volumes,poetry,scan,barcode,reader,library,notebook,poem,shelf
