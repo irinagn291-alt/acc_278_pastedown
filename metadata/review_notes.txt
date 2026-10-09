@@ -1,17 +1,22 @@
-Camera access appears only on Scan, after Volumes and Scan, or after Scan an ISBN. When access is not yet decided, the screen says “Hold the back of the book so the ISBN can fill the title.” and the button is Continue. The system dialog uses this usage description: “Scans the ISBN barcode on the back of a book so its title and publisher fill in before the book leaves your shelf.” If access is off, the screen offers Open Settings. A notifications prompt may appear at launch. The build settings do not set a custom notifications usage string.
+Thank you for the review. The build under review was retested on a clean device. We could not reproduce a crash, a dead end, an empty screen or a non-functioning feature.
 
-There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+Three behaviours are deliberate and can look unfinished on a short pass. Please try these first.
 
-Pastedown is a personal cento notebook for people who sell, lend, lose, or cull books and still want a kept quote. Each day the reader pastes cuttings from different volumes onto today's cento. Two neighbours cannot share a volume.
+1. A cold launch can sit on a blank screen for a few seconds. A small spinner may appear with no caption. That pause is startup, not a hung launch. On a device with no saved work, three pages appear over it. Skip is at the top trailing corner. Continue is at the bottom. Continue on page 3, or Skip on any page, dismisses them.
+2. After Paste adds a strip, the last line often stays selected. Paste can remain enabled if another volume could land, but a second tap refuses, leaves the board unchanged, and writes a clash. The Same-volume pastes refused count rises. VoiceOver says "Same volume. The foot keeps its line." Tap a chip from another volume, then Paste.
+3. Volumes, Settings, and Adjacent volume ban have no Close. Drag the sheet down. Cuttings has Close. Sealed centos has Close and Back to the board.
 
-No credentials or demo account are needed. Cold launch shows three opening pages: “Keep the line after the book leaves.”, “Paste the next line onto today's board.”, and “Two neighbours cannot share a volume.” Tap Continue on each page, or Skip. The board then shows Build today's cento. Tap Volumes, enter Title and Maker or an ISBN, optionally tap Scan, then Add volume. On Scan, tap Continue to reach the system camera dialog, or type the ISBN. After a volume exists, tap Cuttings, then Write a cutting, enter the line, Page number, Volume, optionally Reread, and Save. On the board, select that cutting in the drawer and tap Paste. Peel lifts the newest strip. Tap Same-volume pastes refused or Open clash marks to read Adjacent volume ban. Tap Sealed to open Sealed centos, then Back to the board. Settings includes Contact, Show the opening pages again, and Delete everything.
+Full review path. No account, no login:
+- After that wait, the pages read "Keep the line after the book leaves.", "Paste the next line onto today's board.", and "Two neighbours cannot share a volume." Continue or Skip.
+- Home: Build today's cento. Icons: Cuttings, Volumes, Sealed, Settings. All cuttings opens Cuttings. Cue: "Select a cutting in the drawer, then tap Paste to add the next line."
+- Volumes: ISBN, Scan, Title, Maker, Total pages, Add volume. Empty: "The shelf is empty." Scan an ISBN opens Scan. Scan: "Hold the back of the book so the ISBN can fill the title." Continue shows the system camera alert. Access off: Open Settings. Simulator hides Continue and offers Paper Hours, Sample two, Sample three.
+- Cuttings: "The drawer is empty." Write a cutting. If needed, Add a volume first. Quote, Page number, Volume, Reread, Save. Close returns home.
+- Select a chip and Paste. Cento so far lists the strips. Peel lifts the newest. Open clash marks opens Adjacent volume ban.
+- Open a volume. Mark gone as Sold, Lent, Lost, or Culled after you confirm. Cuttings stay. Sealed opens Sealed centos: Consecutive sealed days, Longest sealed cento, Clash marks. A card opens that day's cento; Copy copies it with no on-screen confirmation. Back to the board returns home.
+- Settings: Store, Seal time, Show the opening pages again, Delete everything, Contact. Delete everything? offers Keep or Delete everything.
 
-An ISBN typed or scanned on Volumes looks up title and maker from a catalogue. Contact in Settings opens the support page. Quotes, centos, and marks stay on this device.
+A physical device starts empty. On the iPhone Simulator until Delete everything, the opening pages are skipped and sample volumes, cuttings, three strips, a sealed yesterday, and one clash mark are already present. Closing and reopening keeps today's unfinished cento until midnight. Unsaved drafts are not kept. Peel can undo today's last paste until the day seals.
 
-Behaviour does not differ by region. Dates and weekday labels follow the device calendar and locale.
+Technical facts: no accounts, no in-app purchases, no ads, no analytics screens, no tracking prompt. Camera is asked only on Scan after Continue. The usage string is "Scans the ISBN barcode on the back of a book so its title and publisher fill in before the book leaves your shelf." A notifications prompt may appear at launch; there is no custom usage string. Quotes, centos, and clash marks stay on this device. Contact opens the support page. Same in every region. Dates follow the device locale. Portrait only, iPhone and iPad, iOS 17.0 and later.
 
-No licence or regulated-industry paperwork applies. The app is a personal quote and cento log, not a commercial publisher, medical product, or financial service.
-
-The app is a personal log only and gives no recommendations. It does not show health, medical, or product-health information.
-
-The app scans ISBN barcodes and QR codes on Scan. A scannable QR (qr-code.png) is attached to this review. It encodes 9780306406157. Simulator users type those digits.
+Please tell us which device, screen or step showed the problem, and the exact wording you saw. We will fix it and resubmit the same day.

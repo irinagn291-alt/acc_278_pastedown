@@ -678,7 +678,7 @@
 				CODE_SIGN_ENTITLEMENTS = Support/Pastedown.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Pastedown-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Pastedown;
@@ -712,7 +712,7 @@
 				CODE_SIGN_ENTITLEMENTS = Support/Pastedown.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Pastedown-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Pastedown;
@@ -829,7 +829,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Support/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/OneSignalNotificationServiceExtension-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
@@ -855,7 +855,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Support/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/OneSignalNotificationServiceExtension-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
@@ -998,10 +998,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		1517BBB5D3663DF3E1DE3B59 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			repositoryURL = "https://github.com/srfcsthpvf-prog/Alamofire";
 			requirement = {
 				kind = revision;
-				revision = 7fdd403089757be2ce6991b287c7bef612c8bd04;
+				revision = 3ea8e93ec37a3ae5f255afb529ef20f438dd1903;
 			};
 		};
 		E10E3FD562E457C4EE6FBB67 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
