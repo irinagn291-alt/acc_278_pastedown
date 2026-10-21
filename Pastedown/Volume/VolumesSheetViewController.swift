@@ -53,6 +53,9 @@ final class VolumesSheetViewController: UITableViewController, UITextFieldDelega
             header.frame.size = size
             tableView.tableHeaderView = header
         }
+        if tableView.backgroundView === empty, empty.frame != tableView.bounds {
+            empty.frame = tableView.bounds
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {

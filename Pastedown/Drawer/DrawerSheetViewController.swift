@@ -40,8 +40,12 @@ final class DrawerSheetViewController: UITableViewController {
             action: #selector(writeCutting)
         )
         navigationItem.rightBarButtonItem?.accessibilityLabel = "Write a cutting"
-        empty.translatesAutoresizingMaskIntoConstraints = false
         reload()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        placeEmptyIfNeeded()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -73,8 +77,17 @@ final class DrawerSheetViewController: UITableViewController {
                 self?.writeCutting()
             }
             tableView.backgroundView = empty
+            placeEmptyIfNeeded()
         }
         tableView.reloadData()
+    }
+
+    private func placeEmptyIfNeeded() {
+        guard tableView.backgroundView === empty else { return }
+        let bounds = tableView.bounds
+        if empty.frame != bounds {
+            empty.frame = bounds
+        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

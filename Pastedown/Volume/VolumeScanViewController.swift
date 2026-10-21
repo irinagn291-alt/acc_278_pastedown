@@ -109,7 +109,9 @@ final class VolumeScanViewController: UIViewController, AVCaptureMetadataOutputO
             window.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Space.n(2)),
             window.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             window.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.42),
-            window.heightAnchor.constraint(equalTo: window.widthAnchor, multiplier: 2.2),
+            window.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.62),
+            scanWindowRatio(window),
+            scanWindowFallback(window),
             shutter.centerXAnchor.constraint(equalTo: window.centerXAnchor),
             shutter.centerYAnchor.constraint(equalTo: window.centerYAnchor),
             shutter.widthAnchor.constraint(equalTo: window.widthAnchor),
@@ -126,6 +128,18 @@ final class VolumeScanViewController: UIViewController, AVCaptureMetadataOutputO
             name: UIApplication.didEnterBackgroundNotification,
             object: nil
         )
+    }
+
+    private func scanWindowRatio(_ window: UIView) -> NSLayoutConstraint {
+        let ratio = window.heightAnchor.constraint(equalTo: window.widthAnchor, multiplier: 2.2)
+        ratio.priority = UILayoutPriority(999)
+        return ratio
+    }
+
+    private func scanWindowFallback(_ window: UIView) -> NSLayoutConstraint {
+        let fill = window.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.62)
+        fill.priority = UILayoutPriority(750)
+        return fill
     }
 
     override func viewDidLayoutSubviews() {

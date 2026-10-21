@@ -104,17 +104,26 @@ final class OnboardingViewController: UIViewController {
         page.view.addSubview(image)
         page.view.addSubview(headline)
         page.view.addSubview(copy)
+        image.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+        image.setContentHuggingPriority(.defaultLow, for: .vertical)
+        let preferredWidth = image.widthAnchor.constraint(equalTo: page.view.widthAnchor, multiplier: 0.55)
+        preferredWidth.priority = UILayoutPriority(748)
+        let square = image.heightAnchor.constraint(equalTo: image.widthAnchor)
+        square.priority = UILayoutPriority(749)
         NSLayoutConstraint.activate([
             image.topAnchor.constraint(equalTo: page.view.safeAreaLayoutGuide.topAnchor, constant: Space.n(6)),
             image.centerXAnchor.constraint(equalTo: page.view.centerXAnchor),
-            image.widthAnchor.constraint(equalTo: page.view.widthAnchor, multiplier: 0.55),
-            image.heightAnchor.constraint(equalTo: image.widthAnchor),
+            preferredWidth,
+            image.widthAnchor.constraint(lessThanOrEqualTo: page.view.widthAnchor, multiplier: 0.55),
+            square,
+            image.heightAnchor.constraint(lessThanOrEqualTo: page.view.heightAnchor, multiplier: 0.42),
             headline.topAnchor.constraint(equalTo: image.bottomAnchor, constant: Space.n(3)),
             headline.leadingAnchor.constraint(equalTo: page.view.leadingAnchor, constant: Space.gutter),
             headline.trailingAnchor.constraint(equalTo: page.view.trailingAnchor, constant: -Space.gutter),
             copy.topAnchor.constraint(equalTo: headline.bottomAnchor, constant: Space.n(2)),
             copy.leadingAnchor.constraint(equalTo: headline.leadingAnchor),
             copy.trailingAnchor.constraint(equalTo: headline.trailingAnchor),
+            copy.bottomAnchor.constraint(lessThanOrEqualTo: page.view.bottomAnchor, constant: -Space.n(2)),
         ])
         return page
     }
